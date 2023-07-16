@@ -1,0 +1,22 @@
+type Query {
+  people: [Person]
+}
+
+type Person {
+  email: String!
+  name: String!
+  address: Address!
+}
+
+type Address {
+  number: Int!
+  street: String!
+  city: String!
+  state: State!
+}
+
+enum State {
+  NSW
+  VIC
+  QLD
+}
