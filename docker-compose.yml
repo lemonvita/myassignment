@@ -1,0 +1,12 @@
+version: '1.0'
+services:
+  app:
+    container_name: person_search_app
+    build:
+      context: .
+      dockerfile: Dockerfile
+    command: python3 personsearch/manage.py runserver 0.0.0.0:8000
+    ports:
+      - "8000:8000"
+    volumes:
+      - .:/personsearch
