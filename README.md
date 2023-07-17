@@ -30,7 +30,6 @@ query {
 ```
 
 ## Tests
-From the root directory, run:
 ```text
-$ python -m pytest ./personsearch
+$ docker-compose run app pytest personsearch/
 ```
