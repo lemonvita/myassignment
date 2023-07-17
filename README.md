@@ -1,6 +1,12 @@
 # qctrl-assignment
---
+Django app serving a paginated Graphql Person search service at `/graphql`
 
+The default page size has been set to:
+```
+DEFAULT_PAGE_SIZE = 2
+```
+
+`db.sqlite3` has been commited with test data.
 
 ## Requirements
 - docker

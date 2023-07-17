@@ -14,9 +14,9 @@ def list_people(obj: Any, info: GraphQLResolveInfo, page_number=1):
     page = Paginator(people_list, DEFAULT_PAGE_SIZE).page(page_number)
     return [
         {
-            "name": person.name,
-            "email": person.email,
-            "address": person.address
+            'name': person.name,
+            'email': person.email,
+            'address': person.address
         }
         for person in page.object_list
     ]
