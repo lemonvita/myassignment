@@ -4,9 +4,7 @@ from .resolver import list_people
 from config.settings import BASE_DIR
 
 
-person_type_defs = load_schema_from_path(
-    BASE_DIR / "app" / "schema" / "people.graphql"
-)
+person_type_defs = load_schema_from_path(f'{BASE_DIR}/app/schema/people.graphql')
 query = QueryType()
 query.set_field("people", list_people)
 
