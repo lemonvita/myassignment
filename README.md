@@ -1,4 +1,4 @@
-# qctrl-assignment
+# myassignment
 Django app serving a paginated Graphql Person search service at `/graphql`
 
 The default page size has been set to:
